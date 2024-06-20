@@ -7,7 +7,7 @@ function Create({ fetchTodos }) {
 
     const handleAdd = () => {
         if (task.trim() === '') return; // Prevent adding empty tasks
-        axios.post('http://localhost:3001/add', { task: task })
+        axios.post('https://quiktasks-todo.onrender.com/add', { task: task })
             .then(result => {
                 fetchTodos(); // Fetch updated todos
                 setTask(''); // Clear the input field

@@ -13,7 +13,7 @@ function Home() {
     }, []);
 
     const fetchTodos = () => {
-        axios.get('http://localhost:3001/get')
+        axios.get('https://quiktasks-todo.onrender.com/get')
             .then(result => {
                 console.log('Data received:', result.data);
                 setTodos(result.data);
@@ -22,7 +22,7 @@ function Home() {
     };
 
     const handleEdit = (id) => {
-        axios.put('http://localhost:3001/update/' + id)
+        axios.put('https://quiktasks-todo.onrender.com/update/' + id)
             .then(result => {
                 fetchTodos(); // Fetch updated todos
             })
@@ -30,7 +30,7 @@ function Home() {
     };
 
     const handleDelete = (id) => {
-        axios.delete('http://localhost:3001/delete/' + id)
+        axios.delete('https://quiktasks-todo.onrender.com/delete/' + id)
             .then(result => {
                 fetchTodos(); // Fetch updated todos
             })
@@ -38,7 +38,7 @@ function Home() {
     };
 
     const handleSearch = () => {
-        axios.get(`http://localhost:3001/search?query=${searchQuery}`)
+        axios.get(`https://quiktasks-todo.onrender.com/search?query=${searchQuery}`)
             .then(result => {
                 console.log('Search results:', result.data);
                 setTodos(result.data);
