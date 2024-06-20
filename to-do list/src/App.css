@@ -1,0 +1,136 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ebffa3;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+}
+
+h1 {
+    color: #333;
+}
+
+.create_form {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.create_form input {
+    flex: 1;
+    width:300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+    outline: none;
+}
+
+.create_form button {
+    padding: 10px 20px;
+    width:100px;
+    background-color: #2a1e3e;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.create_form button:hover {
+    background-color: #484581;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    background-color: #f8f9fa;
+    color: #333;
+    height: 50px;
+    padding: 10px 15px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.checkbox p {
+    margin-left: 10px;
+}
+
+.task div span {
+    margin: 0 5px;
+}
+
+.task div .icon {
+    cursor: pointer;
+    color: #2a1e3e;
+    font-size: 20px;
+}
+
+.line_through {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.search_form {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.search_form input {
+    flex: 1;
+    padding: 10px;
+    width: 100px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+    outline: none;
+}
+
+.search_form button {
+    padding: 10px 20px;
+    background-color: #2a1e3e;
+    width: 100px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search_form button:hover {
+    background-color: #484581;
+}
+
+.no_record {
+    text-align: center;
+    color: #999;
+    margin-top: 20px;
+}
